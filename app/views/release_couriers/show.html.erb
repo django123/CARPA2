@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @release_courier.date %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @release_courier.destination %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @release_courier.reference %>
+</p>
+
+<p>
+  <strong>Ordernumber:</strong>
+  <%= @release_courier.orderNumber %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @release_courier.user %>
+</p>
+
+<%= link_to 'Edit', edit_release_courier_path(@release_courier) %> |
+<%= link_to 'Back', release_couriers_path %>

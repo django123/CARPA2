@@ -1,0 +1,74 @@
+
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Name</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_courier.name %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Description</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_courier.description%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Reference</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_courier.reference %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>File</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_courier.file %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"> <strong>Courier</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_courier.Courier %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_archive_courier_path(@archive_courier) %> |
+<%= link_to 'Back', archive_couriers_path %>

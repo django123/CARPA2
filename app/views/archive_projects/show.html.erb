@@ -1,0 +1,77 @@
+
+
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Name</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_project.name %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Description</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_projectr.description%>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Reference</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_project.reference %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>File</strong></h3>
+      </div>
+      <div class="panel-body">
+        <p>
+
+          <%= @archive_project.file %>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-success">
+      <div class="panel-heading">
+        <h3 class="panel-title"> <strong>Project</strong></h3>
+      </div>
+      <div class="panel-body">
+
+        <%= @archive_project.project %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_archive_project_path(@archive_project) %> |
+<%= link_to 'Back', archive_projects_path %>

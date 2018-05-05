@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @courier.reference %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @courier.subject %>
+</p>
+
+<p>
+  <strong>Sender:</strong>
+  <%= @courier.sender %>
+</p>
+
+<p>
+  <strong>Receiver:</strong>
+  <%= @courier.receiver %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @courier.state %>
+</p>
+
+<p>
+  <strong>Sentdate:</strong>
+  <%= @courier.sentDate %>
+</p>
+
+<p>
+  <strong>Receivedate:</strong>
+  <%= @courier.receiveDate %>
+</p>
+
+<p>
+  <strong>Order number:</strong>
+  <%= @courier.order_number %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @courier.user %>
+</p>
+
+<p>
+  <strong>Project:</strong>
+  <%= @courier.project %>
+</p>
+
+<%= link_to 'Edit', edit_courier_path(@courier) %> |
+<%= link_to 'Back', couriers_path %>

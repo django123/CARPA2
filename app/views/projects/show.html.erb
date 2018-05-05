@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Projet code:</strong>
+  <%= @project.projet_code %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @project.duration %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @project.amount %>
+</p>
+
+<p>
+  <strong>Public partenership:</strong>
+  <%= @project.public_partenership %>
+</p>
+
+<p>
+  <strong>Private partenership:</strong>
+  <%= @project.private_partenership %>
+</p>
+
+<p>
+  <strong>Project situation:</strong>
+  <%= @project.project_situation %>
+</p>
+
+<p>
+  <strong>Focal point:</strong>
+  <%= @project.focal_point %>
+</p>
+
+<p>
+  <strong>Object project:</strong>
+  <%= @project.object_project %>
+</p>
+
+<p>
+  <strong>Procedure:</strong>
+  <%= @project.procedure %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

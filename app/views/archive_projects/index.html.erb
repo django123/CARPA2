@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Archive Projects</h1>
+
+<table class="table table-bordered table-condensed table-striped">
+  <thead>
+  <tr class="success">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Reférence</th>
+    <th>File</th>
+    <th>Project</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @archive_projects.each do |archive_project| %>
+      <tr>
+        <td><%= archive_project.name %></td>
+        <td><%= archive_project.description %></td>
+        <td><%= archive_project.reference %></td>
+        <td><%= archive_project.file %></td>
+        <td><%= archive_project.project %></td>
+        <td><%= link_to 'Show', archive_project %></td>
+        <td><%= link_to 'Edit', edit_archive_project_path(archive_project) %></td>
+        <td><%= link_to 'Destroy', archive_project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Archive Project', new_archive_project_path, remote: true, class: 'submit btn btn-success btn-xs round' %>

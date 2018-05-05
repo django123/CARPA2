@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  projet_code: MyString
+  duration: 2018-05-05
+  amount: MyString
+  public_partenership: MyString
+  private_partenership: MyString
+  project_situation: MyString
+  focal_point: MyString
+  object_project: MyString
+  procedure: MyString
+
+two:
+  projet_code: MyString
+  duration: 2018-05-05
+  amount: MyString
+  public_partenership: MyString
+  private_partenership: MyString
+  project_situation: MyString
+  focal_point: MyString
+  object_project: MyString
+  procedure: MyString

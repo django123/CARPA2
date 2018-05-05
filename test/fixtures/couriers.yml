@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  reference: MyString
+  subject: MyText
+  sender: MyString
+  receiver: MyString
+  state: MyString
+  sentDate: 2018-05-05
+  receiveDate: 2018-05-05
+  order_number: MyString
+  user: one
+  project: one
+
+two:
+  reference: MyString
+  subject: MyText
+  sender: MyString
+  receiver: MyString
+  state: MyString
+  sentDate: 2018-05-05
+  receiveDate: 2018-05-05
+  order_number: MyString
+  user: two
+  project: two

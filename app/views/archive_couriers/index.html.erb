@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Archive Couriers</h1>
+
+<table class="table table-bordered table-condensed table-striped">
+  <thead>
+  <tr class="success">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Reférence</th>
+    <th>File</th>
+    <th>Courier</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @archive_couriers.each do |archive_courier| %>
+      <tr>
+        <td><%= archive_courier.name %></td>
+        <td><%= archive_courier.description %></td>
+        <td><%= archive_courier.reference %></td>
+        <td><%= archive_courier.file %></td>
+        <td><%= archive_courier.courier %></td>
+        <td><%= link_to 'Show', archive_courier %></td>
+        <td><%= link_to 'Edit', edit_archive_courier_path(archive_courier) %></td>
+        <td><%= link_to 'Destroy', archive_courier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Archive Courier', new_archive_courier_path, remote: true, class: 'submit btn btn-success btn-xs round' %>
+
+
+
+
+
+
+
+

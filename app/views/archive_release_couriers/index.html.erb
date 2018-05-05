@@ -1,0 +1,37 @@
+
+
+<p id="notice"><%= notice %></p>
+
+<h1>Archive Release Couriers</h1>
+
+<table class="table table-bordered table-condensed table-striped">
+  <thead>
+  <tr class="success">
+    <th>Name</th>
+    <th>Description</th>
+    <th>Reférence</th>
+    <th>File</th>
+    <th>Release Courier</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @archive_release_couriers.each do |archive_release_courier| %>
+      <tr>
+        <td><%= archive_release_courier.name %></td>
+        <td><%= archive_release_courier.description %></td>
+        <td><%= archive_release_courier.reference %></td>
+        <td><%= archive_release_courier.file %></td>
+        <td><%= archive_release_courier.ReleaseCourier %></td>
+        <td><%= link_to 'Show', archive_release_courier %></td>
+        <td><%= link_to 'Edit', edit_archive_release_courier_path(archive_release_courier) %></td>
+        <td><%= link_to 'Destroy', archive_release_courier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Archive Release Courier', new_archive_release_courier_path, remote: true, class: 'submit btn btn-success btn-xs round' %>
